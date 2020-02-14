@@ -17,3 +17,27 @@
     <div class="right-button"> > </div>
   </div>
 */
+let carouselHeader = document.querySelector('.carousel-container')
+
+function carouselMaker () {
+
+  let div1 = document.createElement('div');
+  let div2 = document.createElement('div');
+  let div3 = document.createElement('div');
+  let img1 = document.createElement('img');
+  let img2 = document.createElement('img');
+  let img3 = document.createElement('img');
+  let img4 = document.createElement('img');
+
+  // Classes
+
+  // Text
+
+  // Append
+
+  // Return
+
+  return div1
+}
+
+carouselMaker();
