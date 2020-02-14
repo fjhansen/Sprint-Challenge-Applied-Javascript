@@ -27,8 +27,13 @@ function Header() {
 
     // Text
 
+    span1.textContent = "MARCH 28, 2019";
+    h1.textContent = "Lambda Times";
+    span2.textContent = "98°";
+
     // Append
 
+    
     // Return
 
     console.log(div1);
