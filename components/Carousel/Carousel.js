@@ -19,7 +19,11 @@
 */
 let carouselHeader = document.querySelector('.carousel-container')
 
-function carouselMaker () {
+
+imgArray = [];
+
+
+function carouselMaker() {
 
   let div1 = document.createElement('div');
   let div2 = document.createElement('div');
@@ -30,14 +34,34 @@ function carouselMaker () {
   let img4 = document.createElement('img');
 
   // Classes
+  div1.classList.add("carousel");
+  div2.classList.add("left-button");
+  div3.classList.add("right-button");
+
+
+
 
   // Text
+  div2.textContent = "<";
+  div3.textContent = ">";
+
+  img1.src = "assets/carousel/mountains.jpeg";
+  img2.src = "assets/carousel/computer.jpeg";
+  img3.src = "assets/carousel/trees.jpeg";
+  img4.src = "assets/carousel/turntable.jpeg";
 
   // Append
+  carouselHeader.appendChild(div1);
+  div1.appendChild(div2);
+  div1.appendChild(img1);
+  div1.appendChild(img2);
+  div1.appendChild(img3);
+  div1.appendChild(img4);
+  div1.appendChild(div3);
 
   // Return
-
-  return div1
+  //console.log(carouselHeader)
+  return div1;
 }
 
 carouselMaker();
