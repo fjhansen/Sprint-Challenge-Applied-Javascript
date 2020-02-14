@@ -12,17 +12,17 @@ let topics = document.querySelector('.topics')
 let one = "https://lambda-times-backend.herokuapp.com/topics"
 
 axios
-.get(one)
-.then(response => {
-    //console.log(response.data);
+    .get(one)
+    .then(response => {
+        //console.log(response.data);
         response.data.topics.forEach(item => {
 
-        let topic = Tabs(item)
-        topics.appendChild(topic);
-    })
+            let topic = Tabs(item)
+            topics.appendChild(topic);
+        })
 
-})
-.catch(error => console.error(`Error: ${error}`))
+    })
+    .catch(error => console.error(`Error: ${error}`))
 
 function Tabs(data) {
     let div1 = document.createElement('div');
@@ -30,5 +30,5 @@ function Tabs(data) {
     div1.classList.add('tab')
     div1.textContent = `${data}`;
 
-    return div1 
+    return div1
 }
