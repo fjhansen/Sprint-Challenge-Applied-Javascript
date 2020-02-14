@@ -30,5 +30,5 @@ function Tabs(data) {
     div1.classList.add('tab')
     div1.textContent = `${data}`;
 
-    return div1
+    return div1 
 }
