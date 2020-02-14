@@ -33,6 +33,11 @@ function Header() {
 
     // Append
 
+    header.appendChild(div1);
+    div1.appendChild(span1);
+    div1.appendChild(h1);
+    div1.appendChild(span2);
+
     
     // Return
 
