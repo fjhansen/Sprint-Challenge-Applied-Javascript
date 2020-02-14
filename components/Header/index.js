@@ -38,7 +38,7 @@ function Header() {
     div1.appendChild(h1);
     div1.appendChild(span2);
 
-    
+
     // Return
 
     console.log(div1);
