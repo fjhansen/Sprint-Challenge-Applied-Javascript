@@ -19,7 +19,7 @@
 */
 let carouselHeader = document.querySelector('.carousel-container')
 
-
+// I have no clue!!!!!!!!!!
 imgArray = [];
 
 
@@ -44,6 +44,8 @@ function carouselMaker() {
   // Text
   div2.textContent = "<";
   div3.textContent = ">";
+
+  img1.style.display = "block";
 
   img1.src = "assets/carousel/mountains.jpeg";
   img2.src = "assets/carousel/computer.jpeg";
